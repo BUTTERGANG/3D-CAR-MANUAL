@@ -11,7 +11,7 @@ VALUES (41, 'Engine Oil and Filter Change', 'Drain engine oil, replace oil filte
     'https://charm.li/Chevrolet/2011/Traverse%20FWD%20V6-3.6L/Repair%20and%20Diagnosis/Maintenance/Fluids/Engine%20Oil/');
 
 INSERT INTO maintenance_tasks (component_id, name, description, interval_miles, interval_months, difficulty, estimated_time_minutes, tools_needed, parts_needed, steps, charm_li_url)
-VALUES (10, 'Cooling System Drain and Fill', 'Drain and refill engine coolant. Use 50/50 DEX-COOL and clean water.', 60000, 60, 'medium', 60,
+VALUES (71, 'Cooling System Drain and Fill', 'Drain and refill engine coolant. Use 50/50 DEX-COOL and clean water.', 60000, 60, 'medium', 60,
     '["GE-47716 Vac-N-Fill Tool", "J 26568 Tester", "Drain pan"]'::jsonb,
     '["DEX-COOL antifreeze ~11 quarts", "Clean water"]'::jsonb,
     '["Do not remove radiator cap while hot", "Remove radiator cap", "Use Vac-N-Fill tool to drain coolant", "Inspect coolant condition", "Normal: fill / Discolored: flush first", "Attach Vac-N-Fill cap to fill port", "Pour 50/50 mix into reservoir", "Create vacuum, draw coolant into system", "Fill to proper level", "Start engine, check for leaks"]'::jsonb,
@@ -56,7 +56,7 @@ INSERT INTO specifications (system_id, component_id, spec_type, name, value, uni
 (1, 41, 'capacity', 'Engine Oil with Filter', '5.5', 'quarts (5.2L)', 'Approximate. Recheck after filling.'),
 (1, 41, 'capacity', 'Engine Oil without Filter', '4.5', 'quarts (4.3L)', 'Approximate'),
 (1, NULL, 'other', 'Oil Type', '5W-30', 'dexos1 certified', 'GM standard'),
-(1, 10, 'capacity', 'Coolant Capacity', '11', 'quarts (10.4L)', 'Approximate total'),
+(1, 69, 'capacity', 'Cooling System Capacity', '11', 'quarts (10.4L)', 'Approximate total system capacity'),
 (1, 53, 'gap', 'Spark Plug Gap', '0.043', 'inches (1.1mm)', 'AC Delco 41-103'),
 (1, 53, 'torque', 'Spark Plug Torque', '15', 'Nm (11 lb ft)', 'Anti-seize on threads'),
 (1, 41, 'torque', 'Oil Filter Torque', '30', 'Nm (22 lb ft)', 'Lubricate gasket'),
