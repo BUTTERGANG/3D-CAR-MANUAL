@@ -56,3 +56,23 @@ SELECT mt.name,
        jsonb_array_length(mt.steps) as step_count
 FROM maintenance_tasks mt
 LIMIT 2;
+
+-- Query 7: Brake front/rear procedure → correct side component
+-- Confirms front pad procedure → component 16 (Front), rear → 17 (Rear),
+-- rotors split correctly between front (8/9) and rear (10/11)
+SELECT 'Q7: Brake Front/Rear Side Check' as test;
+SELECT mt.name AS procedure_name, c.id AS component_id, c.name AS component_name, ss.name AS subsystem
+FROM maintenance_tasks mt
+JOIN components c ON mt.component_id = c.id
+JOIN subsystems ss ON c.subsystem_id = ss.id
+WHERE ss.system_id = 4
+ORDER BY c.id;
+
+-- Query 8: Brake specs → correct component (none should be null)
+-- Pad thickness specs → 16/17, rotor specs → 8/9/10/11, fluid spec → 30
+SELECT 'Q8: Brake Spec → Component Check' as test;
+SELECT sp.name AS spec_name, sp.value, sp.unit, c.id AS component_id, c.name AS component_name
+FROM specifications sp
+LEFT JOIN components c ON sp.component_id = c.id
+WHERE sp.system_id = 4
+ORDER BY c.id;
