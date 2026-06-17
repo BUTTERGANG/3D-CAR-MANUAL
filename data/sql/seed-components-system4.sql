@@ -1,0 +1,33 @@
+-- Seed data: Components — System 4: Brakes and Traction Control
+-- Subsystem IDs: 10=Disc Brake, 11=Hydraulic, 12=Parking Brake, 13=Traction/ABS
+
+INSERT INTO components (system_id, subsystem_id, name, slug, mesh_name, is_serviceable, sort_order, description) VALUES
+(4, 10, 'Brake Rotor (Front Left)', 'brake-rotor-fl', 'brake_rotor_fl', true, 1, 'Front left vented brake rotor'),
+(4, 10, 'Brake Rotor (Front Right)', 'brake-rotor-fr', 'brake_rotor_fr', true, 2, 'Front right vented brake rotor'),
+(4, 10, 'Brake Rotor (Rear Left)', 'brake-rotor-rl', 'brake_rotor_rl', true, 3, 'Rear left solid brake rotor'),
+(4, 10, 'Brake Rotor (Rear Right)', 'brake-rotor-rr', 'brake_rotor_rr', true, 4, 'Rear right solid brake rotor'),
+(4, 10, 'Brake Caliper (Front Left)', 'brake-caliper-fl', 'brake_caliper_fl', true, 5, 'Front left floating brake caliper'),
+(4, 10, 'Brake Caliper (Front Right)', 'brake-caliper-fr', 'brake_caliper_fr', true, 6, 'Front right floating brake caliper'),
+(4, 10, 'Brake Caliper (Rear Left)', 'brake-caliper-rl', 'brake_caliper_rl', true, 7, 'Rear left floating brake caliper'),
+(4, 10, 'Brake Caliper (Rear Right)', 'brake-caliper-rr', 'brake_caliper_rr', true, 8, 'Rear right floating brake caliper'),
+(4, 10, 'Brake Pads (Front)', 'brake-pads-front', 'brake_pads_front', true, 9, 'Front brake pad set. Replace every 30K-50K miles.'),
+(4, 10, 'Brake Pads (Rear)', 'brake-pads-rear', 'brake_pads_rear', true, 10, 'Rear brake pad set. Replace every 30K-50K miles.'),
+(4, 10, 'Brake Pad Wear Sensors', 'brake-wear-sensors', 'brake_wear_sensors', true, 11, 'Brake pad wear indicator sensors'),
+(4, 11, 'Brake Master Cylinder', 'brake-master-cylinder', 'brake_master_cylinder', true, 1, 'Brake master cylinder'),
+(4, 11, 'Brake Booster', 'brake-booster', 'brake_booster', true, 2, 'Vacuum-assisted brake booster'),
+(4, 11, 'Brake Lines (Front)', 'brake-lines-front', 'brake_lines_front', true, 3, 'Front brake steel and rubber lines'),
+(4, 11, 'Brake Lines (Rear)', 'brake-lines-rear', 'brake_lines_rear', true, 4, 'Rear brake steel and rubber lines'),
+(4, 11, 'Brake Hoses (Front)', 'brake-hoses-front', 'brake_hoses_front', true, 5, 'Front rubber flex brake hoses'),
+(4, 11, 'Brake Hoses (Rear)', 'brake-hoses-rear', 'brake_hoses_rear', true, 6, 'Rear rubber flex brake hoses'),
+(4, 11, 'Brake Fluid', 'brake-fluid', 'brake_fluid', true, 7, 'DOT 3 brake fluid. Flush every 2-3 years.'),
+(4, 11, 'ABS Hydraulic Unit', 'abs-hydraulic-unit', 'abs_hydraulic_unit', true, 8, 'ABS hydraulic control unit (part of EBCM)'),
+(4, 12, 'Parking Brake Cable', 'parking-brake-cable', 'parking_brake_cable', true, 1, 'Parking brake cable'),
+(4, 12, 'Parking Brake Shoes', 'parking-brake-shoes', 'parking_brake_shoes', true, 2, 'Parking brake shoes (inside rear rotors)'),
+(4, 12, 'Parking Brake Pedal', 'parking-brake-pedal', 'parking_brake_pedal', true, 3, 'Parking brake pedal assembly'),
+(4, 13, 'Electronic Brake Control Module (EBCM)', 'ebcm', 'ebcm', true, 1, 'Electronic brake control module with ABS'),
+(4, 13, 'Wheel Speed Sensor (FL)', 'wheel-speed-sensor-fl', 'wheel_speed_sensor_fl', true, 2, 'Front left wheel speed sensor'),
+(4, 13, 'Wheel Speed Sensor (FR)', 'wheel-speed-sensor-fr', 'wheel_speed_sensor_fr', true, 3, 'Front right wheel speed sensor'),
+(4, 13, 'Wheel Speed Sensor (RL)', 'wheel-speed-sensor-rl', 'wheel_speed_sensor_rl', true, 4, 'Rear left wheel speed sensor'),
+(4, 13, 'Wheel Speed Sensor (RR)', 'wheel-speed-sensor-rr', 'wheel_speed_sensor_rr', true, 5, 'Rear right wheel speed sensor'),
+(4, 13, 'Yaw Rate Sensor', 'yaw-rate-sensor', 'yaw_rate_sensor', true, 6, 'Stability control yaw rate sensor'),
+(4, 13, 'Steering Angle Sensor', 'steering-angle-sensor', 'steering_angle_sensor', true, 7, 'Steering wheel angle sensor');
