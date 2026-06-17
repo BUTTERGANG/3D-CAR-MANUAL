@@ -34,7 +34,7 @@ INSERT INTO subsystems (system_id, name, slug, sort_order) VALUES
 (2, 'Computers and Control Systems', 'computers-control-systems', 3),
 (2, 'Information Bus', 'information-bus', 4);
 
--- Subsystems for: Transmission and Drivetrrain (system_id = 3)
+-- Subsystems for: Transmission and Drivetrain (system_id = 3)
 INSERT INTO subsystems (system_id, name, slug, sort_order) VALUES
 (3, 'Automatic Transmission', 'automatic-transmission', 1),
 (3, 'Drivetrain', 'drivetrain', 2);
@@ -54,9 +54,9 @@ INSERT INTO subsystems (system_id, name, slug, sort_order) VALUES
 (5, 'Wheels and Tires', 'wheels-tires', 4);
 
 -- Subsystems for: Starting and Charging (system_id = 6)
-INSERT INTO subsystems (system_id, name, sort_order) VALUES
-(6, 'Starting System', 1),
-(6, 'Charging System', 2);
+INSERT INTO subsystems (system_id, name, slug, sort_order) VALUES
+(6, 'Starting System', 'starting-system', 1),
+(6, 'Charging System', 'charging-system', 2);
 
 -- Subsystems for: HVAC (system_id = 7)
 INSERT INTO subsystems (system_id, name, slug, sort_order) VALUES
